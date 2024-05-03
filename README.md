@@ -19,3 +19,13 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 - Iniciar un proyecto git: `git init`
 
 - Ver el estatus de los archivos: `git status`
+
+### Stage
+
+- Añadir archivos al staged: `git add .` (es necesario hacer este add para todos los archivos nuevos recién creados en nuestro directorio) (caso de no querer añadir ciertos archivos o directorios sera necesario un .gitignore)
+
+- Eliminar un archivo individualmente del staged `git rm --cached fileName.extension` (deja de rastrear un archivo específico en Git sin eliminarlo del sistema de archivos ni del área de preparación. Es útil cuando se desea mantener el archivo en el sistema de archivos pero ya no se quiere rastrear en
+  
+  Git.)
+
+- Eliminar directorio completo del staged: `git rm -r --cached nombre_directorio` (se usa un `.` en lugar del nombre del directorio para eliminar todo el staged y dejarlo vacio)
