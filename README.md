@@ -72,4 +72,13 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 
 - Cambiar el nombre de una rama: `git branch -m antiguo_nombre nuevo_nombre`
 
+### Merge
 
+- Hacer un merge: `git merge nombre_rama`
+
+- Resolver conflictos: Un conflicto se da cuando al hacer el merge hay 2 partes del código el cual tienen modificaciones y git pregunta sobre cómo debería hacer el merge ese conflicto donde tenemos 3 opciones: mantenemos lo que ya teníamos, aceptamos lo entrante o mantenemos ambos. Por lo general cuando se da un conflicto en el proceso del merge tenemos un merge incompleto en el cual tendremos que aplicar los siguientes pasos:
+  
+  1. Resolver el conflicto en base a nuestro criterio
+  2. Realizar un {git commit -am “mensaje”} para indicarle a git que ya arreglamos el conflicto del merge
+  
+  Con eso ya se completaría el proceso del merge una vez resuelto el conflicto
