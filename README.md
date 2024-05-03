@@ -13,3 +13,9 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 - cambiar el nombre por defecto de la rama principal en configuraciones: `git config --global init.defaultBranch main` (esta es una configuracion global lo que implica que al iniciar los siguientes proyectos en git el nombre por defecto de la rama principal sera como la que pusimos, en este caso "main", este comando no cambiara el nombre de las ramas de los proyectos git ya existentes, si quieres cambiar el nombre de una rama ya existente puedes usar `git branch -m nuevo_nombre`)
 
 - Ver todas las configuraciones hechas = `git config --list` (Para salir se preciona tal tecla `esc` y luego la tecla `q`)
+
+### Primeros Pasos
+
+- Iniciar un proyecto git: `git init`
+
+- Ver el estatus de los archivos: `git status`
