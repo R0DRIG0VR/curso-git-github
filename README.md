@@ -59,3 +59,17 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 - Retroceder un archivo individual a un commit anterior: `git checkout commit_hash filename.extension`
 
 - Retornar el archivo individual al head de la rama main:`git checkout master filename.extension`
+
+### Ramas
+
+- Crear una rama: `git branch nombre_rama` (es comun para arreglar bugs de ultimo minuto crear una rama llamada hotfix)
+
+- Eliminar una rama: `git branch -d nombre_rama`
+
+- Listar las ramas existentes: `git branch`
+
+- Cambiar entre ramas: `git checkout nombre_rama` o `git switch nombre_rama`
+
+- Cambiar el nombre de una rama: `git branch -m antiguo_nombre nuevo_nombre`
+
+
