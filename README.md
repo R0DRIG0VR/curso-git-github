@@ -49,3 +49,13 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
   - `git reset --hard commit_hash` (elimina absolutamente todo, hasta lo de staged),
   
   - `git reset --soft commit_hash` (elimina todo menos no lo que se encuentra en staged que esta listo para tu siguiente commit)
+
+### Navegacion
+
+- Retroceder todo el repositorio a un commit anterior:`git checkout commit_hash`
+
+- Retornar al head del la rama main:`git checkout master`
+
+- Retroceder un archivo individual a un commit anterior: `git checkout commit_hash filename.extension`
+
+- Retornar el archivo individual al head de la rama main:`git checkout master filename.extension`
