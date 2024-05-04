@@ -111,10 +111,8 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 
 - Clonar un repositorio: `git clone url`
 
+### Ramas
+
 - Eliminar ramas obsoletas de la lista de nuestro repositorio remoto: `git remote prune nombre_repositorio_remoto`
 
 - Cambiar a una rama remota que no la tenemos en local: `git switch rama_remota` o `git checkout rama_remota` (basicamente son los mismos comandos que los del apartado de git)
-
-
-
-
