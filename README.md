@@ -2,6 +2,9 @@
 
 ## Git
 
+Git es un sistema de control de versiones distribuido, diseñado por Linus Torvalds, el creador del kernel del sistema operativo Linux. Fue creado pensando en la eficiencia, la confiabilidad y la compatibilidad del mantenimiento de versiones de aplicaciones que tienen un gran número de archivos de código fuente.
+La principal función de Git es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos en un repositorio de código. Cada copia de trabajo del código de un desarrollador es también un repositorio que puede contener el historial completo de todos los cambios.
+
 ### Configurar git
 
 Una vez instalado git por primera vez antes de inicializar un proyecto git deberemos realizar algunas configuraciones por unica vez.
