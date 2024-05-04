@@ -5,6 +5,10 @@
 Git es un sistema de control de versiones distribuido, diseñado por Linus Torvalds, el creador del kernel del sistema operativo Linux. Fue creado pensando en la eficiencia, la confiabilidad y la compatibilidad del mantenimiento de versiones de aplicaciones que tienen un gran número de archivos de código fuente.
 La principal función de Git es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos en un repositorio de código. Cada copia de trabajo del código de un desarrollador es también un repositorio que puede contener el historial completo de todos los cambios.
 
+### Instalacion
+
+Se puede descargar e instalar git desde en la siguiente pagina [https://git-scm.com](https://git-scm.com) (El proceso puede variar dependiendo del sistema operativo que se use)
+
 ### Configurar git
 
 Una vez instalado git por primera vez antes de inicializar un proyecto git deberemos realizar algunas configuraciones por unica vez.
@@ -23,7 +27,13 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 
 - Ver el estatus de los archivos: `git status`
 
+La siguiente imagen es el grafico basico de como funciona el flujo de git 
+
+<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/git-working-tree.jpeg" alt="" data-align="center">
+
 ### Stage
+
+El término “stage” o área de preparación se refiere al proceso de seleccionar y preparar archivos que han sido modificados para un próximo commit. Imagina que el stage es como una sala de espera donde los archivos modificados aguardan antes de ser confirmados y guardados permanentemente en el historial de tu repositorio.
 
 - Añadir archivos al staged: `git add .` (es necesario hacer este add para todos los archivos nuevos recién creados en nuestro directorio) (caso de no querer añadir ciertos archivos o directorios sera necesario un .gitignore)
 
