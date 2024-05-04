@@ -97,6 +97,18 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 
 - Listar los repositorios añadidos mas sus urls: `git remote -v`
 
-- 
+### Interaccion
+
+- Traer todos los cambios del repositorio remoto: `git pull nombre_repositorio_remoto nombre_rama_local` (ponemos el nombre que le dimos a nuestro repositorio remoto en nuestro local y posteriormente a que rama de nuestro local queremos traer los cambios)
+
+- Forzar el traer los cambios del repositorio remoto: `git pull nombre_repositorio_remoto nombre_rama_local --allow-unrelated-histories` (se usa cuando los commits entre el remoto y el local no coinciden)
+
+- Pushear al repositorio remoto: `git push nombre_repositorio_remoto nombre_rama_local:nombre_rama_remota` (en caso de que la rama del respositorio remoto comparta el mismo nombre de la rama local que queremos pushear podemos omitir el `:nombre_rama_remota`)
+
+- Forzar un push al repositorio remoto: `git push -f nombre_repositorio_remoto nombre_rama_local:nombre_rama_remota` (Esto es una mala practica y solo se debe usar en casos muy particulares)
+
+- Clonar un repositorio: `git clone url`
+
+
 
 
