@@ -66,7 +66,7 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 
 - Eliminar una rama: `git branch -d nombre_rama`
 
-- Listar las ramas existentes: `git branch`
+- Listar las ramas existentes: `git branch` (+ `-a` lista las ramas locales como las ramas remotas, pero para tener la lista actualizada se deberia hacer un fetch antes)
 
 - Cambiar entre ramas: `git checkout nombre_rama` o `git switch nombre_rama`
 
@@ -97,9 +97,11 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 
 - Listar los repositorios añadidos mas sus urls: `git remote -v`
 
+- Actualizar la informacion local con la del repositorio remoto: `git fetch -p` (el `-p` es el comando prune que sirve para elimiar las ramas ya obsoletas)
+
 ### Interaccion
 
-- Traer todos los cambios del repositorio remoto: `git pull nombre_repositorio_remoto nombre_rama_local` (ponemos el nombre que le dimos a nuestro repositorio remoto en nuestro local y posteriormente a que rama de nuestro local queremos traer los cambios)
+- Traer todos los cambios del repositorio remoto: `git pull nombre_repositorio_remoto nombre_rama_local` (ponemos el nombre que le dimos a nuestro repositorio remoto en nuestro local y posteriormente a que rama de nuestro local queremos traer los cambios, es una buena practica que mienstras desarrollamos antes de hacer un push de un commit hecho hagamos un git pull previo por si alguien mas hizo algun cambio)
 
 - Forzar el traer los cambios del repositorio remoto: `git pull nombre_repositorio_remoto nombre_rama_local --allow-unrelated-histories` (se usa cuando los commits entre el remoto y el local no coinciden)
 
@@ -108,6 +110,10 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 - Forzar un push al repositorio remoto: `git push -f nombre_repositorio_remoto nombre_rama_local:nombre_rama_remota` (Esto es una mala practica y solo se debe usar en casos muy particulares)
 
 - Clonar un repositorio: `git clone url`
+
+- Eliminar ramas obsoletas de la lista de nuestro repositorio remoto: `git remote prune nombre_repositorio_remoto`
+
+- Cambiar a una rama remota que no la tenemos en local: `git switch rama_remota` o `git checkout rama_remota` (basicamente son los mismos comandos que los del apartado de git)
 
 
 
