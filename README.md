@@ -82,3 +82,21 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
   2. Realizar un {git commit -am “mensaje”} para indicarle a git que ya arreglamos el conflicto del merge
   
   Con eso ya se completaría el proceso del merge una vez resuelto el conflicto
+
+## Github
+
+### Repositorios
+
+- Añadir una url de repositorio remoto (github,gitlab,etc): `git remote add origin url_repositorio` (en origin puede ir cualquier nombre simplemente origin es un standar)
+
+- Editar la url de un repositorio remoto: `git remote set-url nombre_remoto url_repositorio` (remoteName es el nombre de la rama remota ya creada)
+
+- Eliminar un repositiorio remoto: `git remote remove nombre_repositorio`
+
+- Listar todos los repositorios añadidos: `git remote`
+
+- Listar los repositorios añadidos mas sus urls: `git remote -v`
+
+- 
+
+
