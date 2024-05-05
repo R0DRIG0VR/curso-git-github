@@ -144,6 +144,23 @@ La siguientes imagenes son unos grafico mas completo de como se veria el flujo e
 ![github](imagenes/git-all-areas.png)
 ![github2](imagenes/github.png)
 
+### Readme
+
+Un archivo README.md es un documento importante que se encuentra generalmente en la raíz de un repositorio. Su propósito es ofrecer una visión general del proyecto para que cualquier persona que visite el repositorio pueda entender rápidamente de qué se trata y cómo puede contribuir o utilizarlo.
+Algunos elementos clave que suelen incluirse en un archivo README:
+
+- <u>Descripción del Proyecto</u>: Explica qué hace el proyecto y por qué es útil.
+  Instrucciones de Instalación: Proporciona los pasos necesarios para instalar y configurar el proyecto.
+
+- <u>Uso</u>: Muestra cómo usar el proyecto, con ejemplos de código o comandos.
+  Contribución: Guía a los colaboradores potenciales sobre cómo pueden ayudar con el proyecto.
+
+- <u>Licencia</u>: Informa a los usuarios sobre los términos bajo los cuales pueden usar y contribuir al proyecto.
+
+- <u>Contacto</u>: Ofrece información sobre cómo obtener ayuda o contactar a los mantenedores del proyecto.
+
+El archivo README es a menudo el primer punto de contacto entre el proyecto y un visitante, y por lo tanto, es una herramienta de comunicación esencial para los desarrolladores que quieren compartir su trabajo con la comunidad.
+
 ### Repositorios
 
 - Añadir una url de repositorio remoto (github,gitlab,etc): `git remote add origin url_repositorio` (en origin puede ir cualquier nombre simplemente origin es un standar)
