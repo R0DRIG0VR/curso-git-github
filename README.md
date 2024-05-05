@@ -101,7 +101,7 @@ Cuando creas una nueva rama, estás haciendo una copia del estado actual de tu p
 
 - Crear una rama: `git branch nombre_rama` (es comun para arreglar bugs de ultimo minuto crear una rama llamada hotfix)
 
-- Eliminar una rama: `git branch -d nombre_rama`
+- Eliminar una rama: `git branch -d nombre_rama` (este comando solo te dejara eliminar si ya se hizo un merge previo de la rama para forzar la eliminacion se usa un `-D `en lugar de `-d`)
 
 - Listar las ramas existentes: `git branch` (+ `-a` lista las ramas locales como las ramas remotas, pero para tener la lista actualizada se deberia hacer un fetch antes)
 
