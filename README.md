@@ -144,6 +144,14 @@ La siguientes imagenes son unos grafico mas completo de como se veria el flujo e
 ![github](imagenes/git-all-areas.png)
 ![github2](imagenes/github.png)
 
+### Generar y conectar clave SSH
+
+Para establecer una coneccion entre nuestra maquina local con nuestro github hay diferentes formas una de ellas es la generacion de una clave ssh, el siguiente link es la documentacion oficial de github para hacer esto ya que el proceso varia dependiendo del sistema operativo que estemos usando: https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+y la siguiente documentacion es el como conectar nuestra clave con nuestra cuenta de github: https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+(Es una buena practica generar una clave por cada maquina que queramos vincular con nuestra cuenta, y no mover nuestra clave privada fuera de nuestra maquina esto por razones de seguridad)
+
 ### Readme
 
 Un archivo README.md es un documento importante que se encuentra generalmente en la raíz de un repositorio. Su propósito es ofrecer una visión general del proyecto para que cualquier persona que visite el repositorio pueda entender rápidamente de qué se trata y cómo puede contribuir o utilizarlo.
