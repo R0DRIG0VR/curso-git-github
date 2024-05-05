@@ -140,7 +140,7 @@ En GitHub, puedes:
 
 - Contribuir a proyectos de código abierto, donde cualquier persona puede sugerir cambios y mejoras a través de "pull requests".
 
-La siguiente imagen es un grafico mas completo de como se veria el flujo entre git y github
+La siguientes imagenes son unos grafico mas completo de como se veria el flujo entre git y github
 ![github](imagenes/git-all-areas.png)
 ![github2](imagenes/github.png)
 
