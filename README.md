@@ -143,7 +143,7 @@ En GitHub, puedes:
 
 La siguiente imagen es un grafico mas completo de como se veria el flujo entre git y github
 
-![](/Users/rodri/Documents/SCESI/apuntes/imagenes/git-all-areas.png)
+<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/git-all-areas.png" alt="" data-align="inline" width="286">  <img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/github.png" alt="" width="285">
 
 ### Repositorios
 
