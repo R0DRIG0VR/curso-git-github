@@ -30,8 +30,7 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 - Ver el estatus de los archivos: `git status`
 
 La siguiente imagen es el grafico basico de como funciona el flujo de git 
-
-<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/git_workflow.png" alt="" data-align="center">
+![git_flow](./imagenes/git_workflow.png)
 
 ### Stage
 
