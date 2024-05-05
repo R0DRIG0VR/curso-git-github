@@ -30,7 +30,7 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 - Ver el estatus de los archivos: `git status`
 
 La siguiente imagen es el grafico basico de como funciona el flujo de git 
-![git_flow](./imagenes/git_workflow.png)
+![git_flow](imagenes/git_workflow.png)
 
 ### Stage
 
@@ -91,7 +91,7 @@ Por lo general se realiza un commit cuando estás creando un registro en el hist
 
 ### Ramas
 
-![](/Users/rodri/Documents/SCESI/apuntes/imagenes/branchs.png)
+![ramas](imagenes/branchs.png)
 
 Una rama en Git es básicamente una línea de desarrollo independiente dentro de un proyecto. Puedes pensar en las ramas como diferentes caminos que puedes tomar para trabajar en distintas características, correcciones de errores, o experimentos sin afectar la línea principal de desarrollo, que generalmente es la rama master o main.
 Cuando creas una nueva rama, estás haciendo una copia del estado actual de tu proyecto (o del punto específico de la rama desde la cual la creas) y cualquier cambio que hagas en esa rama no afectará a otras ramas. Esto te permite trabajar de manera aislada. Por ejemplo, podrías tener una rama para desarrollar una nueva característica mientras otra persona trabaja en la corrección de un error en otra rama.
@@ -110,7 +110,7 @@ Cuando creas una nueva rama, estás haciendo una copia del estado actual de tu p
 
 ### Merge
 
-<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/merge.png" alt="" data-align="center" width="287">
+![merge](imagenes/merge.png)
 
 Un merge en Git es el proceso de combinar dos líneas de desarrollo independientes, generalmente ramas, en una sola. Al realizar un merge, Git intenta automáticamente integrar los cambios de las ramas involucradas. Si ambas ramas han modificado las mismas partes de los mismos archivos, entonces puede surgir un conflicto que requiere intervención manual para resolver.
 
@@ -118,7 +118,7 @@ Un merge en Git es el proceso de combinar dos líneas de desarrollo independient
 
 - Resolver conflictos: 
   
-  ![](/Users/rodri/Documents/SCESI/apuntes/imagenes/merge-conflict.png)
+  ![conflictos](imagenes/merge-conflict.png)
   
   Un conflicto se da cuando al hacer el merge hay 2 partes del código el cual tienen modificaciones y git pregunta sobre cómo debería hacer el merge ese conflicto donde tenemos 3 opciones: mantenemos lo que ya teníamos, aceptamos lo entrante o mantenemos ambos. Por lo general cuando se da un conflicto en el proceso del merge tenemos un merge incompleto en el cual tendremos que aplicar los siguientes pasos:
   
@@ -141,8 +141,8 @@ En GitHub, puedes:
 - Contribuir a proyectos de código abierto, donde cualquier persona puede sugerir cambios y mejoras a través de "pull requests".
 
 La siguiente imagen es un grafico mas completo de como se veria el flujo entre git y github
-
-<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/git-all-areas.png" alt="" data-align="inline" width="286">  <img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/github.png" alt="" width="285">
+![github](imagenes/git-all-areas.png)
+![github2](imagenes/github.png)
 
 ### Repositorios
 
