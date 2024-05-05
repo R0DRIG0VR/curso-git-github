@@ -13,6 +13,8 @@ Se puede descargar e instalar git desde en la siguiente pagina [https://git-scm.
 
 Una vez instalado git por primera vez antes de inicializar un proyecto git deberemos realizar algunas configuraciones por unica vez.
 
+#### Comandos
+
 - Poner o cambiar nombre: `git config --global user.name "tu nombre"`
 
 - Poner o cambiar email: `git config --global user.email “tu email”`
@@ -29,11 +31,13 @@ Una vez instalado git por primera vez antes de inicializar un proyecto git deber
 
 La siguiente imagen es el grafico basico de como funciona el flujo de git 
 
-<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/git-working-tree.jpeg" alt="" data-align="center">
+<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/git_workflow.png" alt="" data-align="center">
 
 ### Stage
 
 El término “stage” o área de preparación se refiere al proceso de seleccionar y preparar archivos que han sido modificados para un próximo commit. Imagina que el stage es como una sala de espera donde los archivos modificados aguardan antes de ser confirmados y guardados permanentemente en el historial de tu repositorio.
+
+#### Comandos
 
 - Añadir archivos al staged: `git add .` (es necesario hacer este add para todos los archivos nuevos recién creados en nuestro directorio) (caso de no querer añadir ciertos archivos o directorios sera necesario un .gitignore)
 
@@ -44,6 +48,19 @@ El término “stage” o área de preparación se refiere al proceso de selecci
 - Eliminar directorio completo del staged: `git rm -r --cached nombre_directorio` (se usa un `.` en lugar del nombre del directorio para eliminar todo el staged y dejarlo vacio)
 
 ### Commits
+
+Un commit en Git es como un punto de control en el desarrollo de tu proyecto, que captura el estado actual de tu repositorio en un momento específico. Puedes pensar en un commit como una fotografía del código que incluye todos los cambios que has hecho hasta ese momento.
+Por lo general se realiza un commit cuando estás creando un registro en el historial de tu proyecto que incluye:
+
+- Los cambios exactos en los archivos (añadidos, modificados, eliminados).
+
+- Una referencia a este conjunto de cambios como una entidad única.
+
+- Un mensaje descriptivo que explica qué cambios se han realizado y por qué.
+
+- Este proceso te permite volver a cualquier commit anterior si necesitas restaurar el estado de tu proyecto a cómo estaba en ese punto, o si quieres entender la evolución de tu código a lo largo del tiempo.
+
+#### Comandos
 
 - Realizar un commit con su mensaje: `git commit -m “mensaje para mas informacion sobre el commit”`
 
@@ -75,6 +92,13 @@ El término “stage” o área de preparación se refiere al proceso de selecci
 
 ### Ramas
 
+![](/Users/rodri/Documents/SCESI/apuntes/imagenes/branchs.png)
+
+Una rama en Git es básicamente una línea de desarrollo independiente dentro de un proyecto. Puedes pensar en las ramas como diferentes caminos que puedes tomar para trabajar en distintas características, correcciones de errores, o experimentos sin afectar la línea principal de desarrollo, que generalmente es la rama master o main.
+Cuando creas una nueva rama, estás haciendo una copia del estado actual de tu proyecto (o del punto específico de la rama desde la cual la creas) y cualquier cambio que hagas en esa rama no afectará a otras ramas. Esto te permite trabajar de manera aislada. Por ejemplo, podrías tener una rama para desarrollar una nueva característica mientras otra persona trabaja en la corrección de un error en otra rama.
+
+#### Comandos
+
 - Crear una rama: `git branch nombre_rama` (es comun para arreglar bugs de ultimo minuto crear una rama llamada hotfix)
 
 - Eliminar una rama: `git branch -d nombre_rama`
@@ -87,9 +111,17 @@ El término “stage” o área de preparación se refiere al proceso de selecci
 
 ### Merge
 
+<img title="" src="file:///Users/rodri/Documents/SCESI/apuntes/imagenes/merge.png" alt="" data-align="center" width="287">
+
+Un merge en Git es el proceso de combinar dos líneas de desarrollo independientes, generalmente ramas, en una sola. Al realizar un merge, Git intenta automáticamente integrar los cambios de las ramas involucradas. Si ambas ramas han modificado las mismas partes de los mismos archivos, entonces puede surgir un conflicto que requiere intervención manual para resolver.
+
 - Hacer un merge: `git merge nombre_rama`
 
-- Resolver conflictos: Un conflicto se da cuando al hacer el merge hay 2 partes del código el cual tienen modificaciones y git pregunta sobre cómo debería hacer el merge ese conflicto donde tenemos 3 opciones: mantenemos lo que ya teníamos, aceptamos lo entrante o mantenemos ambos. Por lo general cuando se da un conflicto en el proceso del merge tenemos un merge incompleto en el cual tendremos que aplicar los siguientes pasos:
+- Resolver conflictos: 
+  
+  ![](/Users/rodri/Documents/SCESI/apuntes/imagenes/merge-conflict.png)
+  
+  Un conflicto se da cuando al hacer el merge hay 2 partes del código el cual tienen modificaciones y git pregunta sobre cómo debería hacer el merge ese conflicto donde tenemos 3 opciones: mantenemos lo que ya teníamos, aceptamos lo entrante o mantenemos ambos. Por lo general cuando se da un conflicto en el proceso del merge tenemos un merge incompleto en el cual tendremos que aplicar los siguientes pasos:
   
   1. Resolver el conflicto en base a nuestro criterio
   2. Realizar un {git commit -am “mensaje”} para indicarle a git que ya arreglamos el conflicto del merge
@@ -97,6 +129,21 @@ El término “stage” o área de preparación se refiere al proceso de selecci
   Con eso ya se completaría el proceso del merge una vez resuelto el conflicto
 
 ## Github
+
+Es una plataforma de alojamiento de código para el control de versiones y la colaboración. Permite a los desarrolladores almacenar y gestionar su código, así como rastrear y controlar los cambios en el código. Es como una red social para el código donde los desarrolladores pueden colaborar en proyectos, discutir mejoras y compartir ideas.
+En GitHub, puedes:
+
+- Almacenar tu código en repositorios, que son como carpetas o proyectos que contienen todos los archivos relacionados con un proyecto.
+
+- Colaborar con otros desarrolladores, permitiendo que múltiples personas trabajen en el mismo proyecto desde diferentes ubicaciones.
+
+- Controlar los cambios en el código, utilizando Git para llevar un registro de cada modificación y permitir revertir a versiones anteriores si es necesario.
+
+- Contribuir a proyectos de código abierto, donde cualquier persona puede sugerir cambios y mejoras a través de "pull requests".
+
+La siguiente imagen es un grafico mas completo de como se veria el flujo entre git y github
+
+![](/Users/rodri/Documents/SCESI/apuntes/imagenes/git-all-areas.png)
 
 ### Repositorios
 
