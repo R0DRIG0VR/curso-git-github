@@ -171,7 +171,7 @@ El archivo README es a menudo el primer punto de contacto entre el proyecto y un
 
 ### Repositorios
 
-- Añadir una url de repositorio remoto (github,gitlab,etc): `git remote add origin url_repositorio` (en origin puede ir cualquier nombre simplemente origin es un standar)
+- Añadir una url de repositorio remoto (github,gitlab,etc): `git remote add origin url_repositorio` (en origin puede ir cualquier nombre simplemente origin es un standar, en el caso de usar una clave ssh tendremos que copiar esta opcion de nuestro repositorio en github para ponerlo en url_repositorio)
 
 - Editar la url de un repositorio remoto: `git remote set-url nombre_remoto url_repositorio` (remoteName es el nombre de la rama remota ya creada)
 
@@ -202,3 +202,19 @@ El archivo README es a menudo el primer punto de contacto entre el proyecto y un
 - Cambiar a una rama remota que no la tenemos en local: `git switch rama_remota` o `git checkout rama_remota` (basicamente son los mismos comandos que los del apartado de git)
 
 - Eliminar una rama en remoto: `git push :nombre_repositorio_remoto/nombre_rama`
+
+## Comandos Complementarios Utiles
+
+### Tags
+
+- Añadir un tag a un commit: `git tag -a nombre_del_tag -m “mensaje_del_tag” hash_del_commit`
+
+- Eliminar un tag: `git tag -d nombre_del_tag`
+
+- Ver todos los tags creados: `git tag`
+
+- Ver el hash de todos los tags creados: `git show-ref --tags`
+
+- Pushear los tags al repositorio remoto: `git push nombre_repositorio_remoto --tags`
+
+- Eliminar un tag del repositorio remoto: `git push nombre_repositorio_remoto:refs/tags/nombre_del_tag`
