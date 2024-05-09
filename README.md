@@ -79,6 +79,10 @@ Por lo general se realiza un commit cuando estás creando un registro en el hist
   
   - `git reset --soft commit_hash` (elimina todo menos no lo que se encuentra en staged que esta listo para tu siguiente commit)
 
+- Arreglar un commit que ya enviamos sin necesidad de crear uno nuevo: git `commit --amend` (este comando arreglara el último commit que hayamos hecho y además te permite arreglar también el mensaje del commit)
+
+- Traer commits viejos al head de una rama: `git cherry-pick hash_del_commit`
+
 ### Navegacion
 
 - Retroceder todo el repositorio a un commit anterior:`git checkout commit_hash`
@@ -218,3 +222,33 @@ El archivo README es a menudo el primer punto de contacto entre el proyecto y un
 - Pushear los tags al repositorio remoto: `git push nombre_repositorio_remoto --tags`
 
 - Eliminar un tag del repositorio remoto: `git push nombre_repositorio_remoto:refs/tags/nombre_del_tag`
+
+### Stash
+
+- Hacer un stash: `git stash`
+
+- Ver los stash creados: git stash list: `git stash list`
+
+- Soltar los cambios en el stash: `git stash pop`
+
+- Crear una rama con los cambios que tenemos en el stash: `git stash branch nombre_rama`
+
+- Comando para borrar los stash: `git stash drop`
+
+### String Filter
+
+- Buscar una palabra en todo el repositorio: `git grep -n palabra` (para símbolos especiales hay que usar “string“)
+
+- Buscar cuantas veces aparece una palabra en un archivo: `git grep -c palabra` (para símbolos especiales hay que usar “string“)
+
+- Buscara palabras en los mensajes de los commits: `git log -S palabra`
+
+### Utiles
+
+- Hacer un rebase: `git rebase branchName` (para hacer un buen rebase primero hacemos el rebase en la rama que haremos desaparecer y después nos movemos a la rama master y le hacemos un rebase de la rama que haremos desaparecer )
+
+- Previsualizar los archivos que se van a limpiar basado en la memoria de tus commits en git: `git clean --dry-run`
+
+- Limpiar archivos basura basado en la memoria de tus commits en git: `git clean -f`
+
+- Ver el historial de todo lo ocurrido en git: `git reflog`
