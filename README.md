@@ -271,6 +271,120 @@ Es una forma de guardar temporalmente cambios no confirmados para que puedas cam
 
 - Ver el historial de todo lo ocurrido en git: `git reflog`
 
+## Buenas practicas
+
+### Cada cuanto hacer un commit
+
+**A menudo**. Es mejor hacer commits pequeños, agrupando pequeñas mejoras o acciones, que un commit con todo lo que se quiere hacer.
+
+**Hacer commit a menudo no significa que debas hacer commits sin sentido.** Graba tus progresos en iteraciones pequeñas pero que tengan un significado y que, si puede ser, no deje tu aplicación o proyecto sin funcionar.
+
+### Escribir buenos commits
+
+1. **Usar el verbo imperativo (Add, Change, Fix, Remove)**
+   
+   - **Add**: Significa que se añade un nuevo archivo.
+   
+   - **Change**: Significa que se modifica un archivo existente.
+   
+   - **Fix**: Significa que se arregla un bug.
+   
+   - **Remove**: Significa que se elimina un archivo existente.
+
+2. **No uses punto final ni puntos suspensivos en tus
+   mensajes**
+   
+   Usar puntuación, más allá de las comas, es innecesario a la hora de crear un buen
+   mensaje de commit. Cada carácter cuenta a la hora de describir un cambio, así
+   que no lo desperdicies con puntos innecesarios.
+
+3. **Usa como máximo 50 caracteres para tu mensaje de
+   commit**
+   
+   Sé corto y conciso. Si tienes mucho que explicar es probable que tu commit
+   contenga demasiados cambios. ¿Puedes separarlo en diferentes commits? Pues
+   entonces hazlo.
+
+4. **Añade todo el contexto que se necesario en el
+   cuerpo del commit**
+   
+   A veces necesitas proveer de más contexto a tu commit. Para ello, en lugar de
+   saturar el sumario del commit, añade información que sea necesaria en el cuerpo
+   del mensaje.
+   Para ello utilizamos `git commit` , donde la primera línea será el título y desde la
+   segunda línea será el cuerpo (donde si hay que aplicar reglas de puntuación).
+
+5. **Usa un prefijo para tus commits para hacerlos más
+   semánticos**
+   
+   Prefijos:
+   
+   - **feat**: para una nueva característica para el usuario.
+   
+   - **fix**: para un bug que afecta al usuario.
+   
+   - **perf**: para cambios que mejoran el rendimiento del sitio.
+   
+   - **build**: para cambios en el sistema de build, tareas de despliegue o instalación.
+   
+   - **ci**: para cambios en la integración continua.
+   
+   - **docs**: para cambios en la documentación.
+   
+   - **refactor**: para refactorización del código como cambios de nombre de
+     variables o funciones.
+   
+   - **style**: para cambios de formato, tabulaciones, espacios o puntos y coma, etc;
+     no afectan al usuario.
+   
+   - **test**: para tests o refactorización de uno ya existente.
+
+6. **Considera usar utilidades para hacer commit**
+   
+   Puedes usar husky para ejecutar scripts o comandos antes de realizar diferentes
+   acciones sobre el repositorio, gracias a los hooks de git. Por ejemplo, puedes
+   ejecutar los tests antes de subir los cambios al repositorio remoto.
+
+### Escribir un buen nombre para una rama
+
+**Dependiendo de la metodología de trabajo de tu organización, empresa o
+equipo, estos consejos pueden ser más o menos válidos.**
+
+1. **Sé consistente al nombrar tus ramas**
+   
+   Deberías usar siempre el mismo patrón. Sé consistente y documenta si hace falta
+   las decisiones tomadas, de forma que todo el equipo de trabajo pueda entender
+   las reglas que hay que seguir.
+
+2. **Usa el nombre de la acción que se realiza en la rama**
+   
+   - **bug**: Cambios de código para arreglar un bug conocido.
+   
+   - **feature**: Desarrollo de una nueva característica.
+   
+   - **experiment**: Experimentos que nunca serán fusionados.
+   
+   - **hotfix**: Cambio rápido de un error crítico.
+
+3. **Usa los IDs de JIRA o el sistema de tickets que uses**
+   
+   Una buena idea es adjuntar al principio del nombre de la rama la ID del ticket o de
+   la issue que esté asociada. Eso, obviamente, si estás usando algún sistema para
+   gestionar tu proyecto (que seguramente debería ser así, por rudimentario que sea
+   el sistema).
+
+### ¿Alteara el historial de mi proyecto?
+
+> La única buena razón para hacer esto es que has publicado una contraseña, una llave de una API o información sensible que no debería estar en el historia. Incluso en ese caso, si es posible, es mejor idea reiniciar la contraseña o la llave. ¿Por qué? Porque esa información ya es vulnerable al haber sido expuesta y borrarla del historial no garantiza nada.
+> 
+> --Apuntes winsor
+
+
+
+> Un sitio donde puede tener sentido hacer rebase es en las ramas. Cuando estás desarrollando en una rama, puedes hacer rebase con la rama principal. De esta forma reescribes el historial de la rama de desarrollo y puedes evitar los commits de Merge que pueden añadir ruido al historial.
+> 
+> --Apuntes winsor
+
 ## Flujos de trabajo
 
 ### Git Flow
