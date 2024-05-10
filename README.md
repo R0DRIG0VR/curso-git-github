@@ -156,22 +156,62 @@ y la siguiente documentacion es el como conectar nuestra clave con nuestra cuent
 
 (Es una buena practica generar una clave por cada maquina que queramos vincular con nuestra cuenta, y no mover nuestra clave privada fuera de nuestra maquina esto por razones de seguridad)
 
-### Readme
+### .gitignore
+
+El archivo `.gitignore` es un archivo de texto que le dice a Git qué archivos o carpetas debe ignorar en un proyecto. Este archivo es muy útil para excluir archivos que no deberían ser rastreados por Git, como los archivos temporales, los archivos de configuración personal, los archivos de registro, los archivos binarios, etc.
+
+- **Ubicación**: Un archivo `.gitignore` local generalmente se coloca en el directorio raíz de un proyecto. También puedes crear un archivo .gitignore global, y cualquier entrada en ese archivo se ignorará en todos tus repositorios de Git.
+
+- **Formato**: Cada línea del archivo `.gitignore` especifica un patrón. Por ejemplo, `*.log` hará que Git ignore todos los archivos con extensión .log. Puedes incluir un `/`al principio para evitar coincidencias en subdirectorios. Por ejemplo, `/temp` ignorará el directorio temp en la raíz del proyecto, pero no en sus subdirectorios.
+
+- **Comentarios**: Puedes incluir comentarios en tu archivo `.gitignore` utilizando el carácter`#`. Git ignorará cualquier cosa después del `#` y puedes usarlo para describir el propósito de cada patrón.
+
+### README.md
 
 Un archivo README.md es un documento importante que se encuentra generalmente en la raíz de un repositorio. Su propósito es ofrecer una visión general del proyecto para que cualquier persona que visite el repositorio pueda entender rápidamente de qué se trata y cómo puede contribuir o utilizarlo.
 Algunos elementos clave que suelen incluirse en un archivo README:
 
-- <u>Descripción del Proyecto</u>: Explica qué hace el proyecto y por qué es útil.
+- **Descripción del Proyecto**: Explica qué hace el proyecto y por qué es útil.
   Instrucciones de Instalación: Proporciona los pasos necesarios para instalar y configurar el proyecto.
 
-- <u>Uso</u>: Muestra cómo usar el proyecto, con ejemplos de código o comandos.
+- **Uso**: Muestra cómo usar el proyecto, con ejemplos de código o comandos.
   Contribución: Guía a los colaboradores potenciales sobre cómo pueden ayudar con el proyecto.
 
-- <u>Licencia</u>: Informa a los usuarios sobre los términos bajo los cuales pueden usar y contribuir al proyecto.
-
-- <u>Contacto</u>: Ofrece información sobre cómo obtener ayuda o contactar a los mantenedores del proyecto.
+- **Contacto**: Ofrece información sobre cómo obtener ayuda o contactar a los mantenedores del proyecto.
 
 El archivo README es a menudo el primer punto de contacto entre el proyecto y un visitante, y por lo tanto, es una herramienta de comunicación esencial para los desarrolladores que quieren compartir su trabajo con la comunidad.
+
+### LICENSE.md
+
+El archivo LICENSE.md es un archivo que se encuentra en muchos repositorios de código, especialmente en proyectos de código abierto. Este archivo contiene la licencia bajo la cual se distribuye el proyecto.
+
+- **Propósito**: El archivo `LICENSE.md` especifica los términos bajo los cuales se puede usar, copiar, modificar y distribuir el software del proyecto. Esto puede incluir restricciones sobre cómo se puede utilizar el software, si se debe mantener el aviso de copyright, si se deben compartir las modificaciones, etc.
+
+- **Ubicación**: Generalmente, el archivo `LICENSE.md` se coloca en el directorio raíz del repositorio, junto con otros archivos importantes como README.md y CONTRIBUTING.md.
+
+- **Formato**: El contenido exacto del archivo `LICENSE.md` puede variar dependiendo de la licencia que se haya elegido para el proyecto. Algunas licencias comunes incluyen la Licencia MIT, la Licencia Apache 2.0 y la Licencia Pública General de GNU (GPL).
+
+### CONTRIBUTING.md
+
+El archivo `CONTRIBUTING.md` es un archivo de texto que se encuentra en muchos repositorios de código abierto. Este archivo proporciona instrucciones sobre cómo los colaboradores pueden participar en el proyecto.
+
+- **Ubicación**: Generalmente, el archivo CONTRIBUTING.md se coloca en el directorio raíz del repositorio, junto con otros archivos importantes como README.md y LICENSE.md
+
+- **Contenido**: El contenido exacto del archivo CONTRIBUTING.md puede variar dependiendo del proyecto, pero a menudo incluye información sobre los siguientes aspectos:
+  
+  - Cómo configurar el entorno de desarrollo.
+  
+  - Cómo informar de errores o sugerir mejoras.
+  
+  - Las pautas para enviar pull requests.
+  
+  - Los estándares de codificación y estilo que se deben seguir.
+  
+  - Cómo ejecutar pruebas.
+  
+  - Cómo agregar documentación.
+  
+  - Cómo pedir ayuda o hacer preguntas sobre el proyecto.
 
 ### Repositorios
 
