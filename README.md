@@ -207,6 +207,20 @@ El archivo README es a menudo el primer punto de contacto entre el proyecto y un
 
 - Eliminar una rama en remoto: `git push :nombre_repositorio_remoto/nombre_rama`
 
+### Pull Requests
+
+Una Pull Request, o de forma abreviada PR, es una petición de cambios que se envía al repositorio original. Estos cambios que queremos llevar a cabo los tenemos que agrupar en commits, en una rama, en nuestro fork. Con esos cambios podremos crear nuestra petición.
+
+Al hacer push a nuestro repositorio remoto, nos indica que podemos crear una Pull Request visitando la URL que nos ha indicado en la terminal.
+
+En una pullrequest tendremos 3 partes importantes:
+
+1. **Ramas**: Especificar la rama a la que queremos pushear los cambios, y especificar la rama de la que queremos traer los cambios.
+
+2. **Título**: Es una descripción corta y concisa de los cambios que se han realizado. Debe ser claro y dar una idea de lo que se ha cambiado.
+
+3. **Descripción**: Aquí se proporciona una explicación más detallada de los cambios. Puedes incluir el motivo de los cambios, el problema que resuelve, y cualquier otra información relevante.
+
 ## Comandos Complementarios Utiles
 
 ### Tags
@@ -252,3 +266,65 @@ El archivo README es a menudo el primer punto de contacto entre el proyecto y un
 - Limpiar archivos basura basado en la memoria de tus commits en git: `git clean -f`
 
 - Ver el historial de todo lo ocurrido en git: `git reflog`
+
+## Flujos de trabajo
+
+### Gitflow
+
+![gitflow](/Users/rodri/Documents/SCESI/apuntes/imagenes/git-flow.jpeg)
+
+Es una estrategia de ramificación útil para equipos que tienen procesos de lanzamiento claros y necesitan mantener estables sus entornos de producción. Sin embargo, la dependencia de múltiples ramas y reglas añade mucha complejidad al proceso. Esto puede resultar abrumador para los nuevos miembros del equipo y puede generar conflictos debido al incumplimiento de los principios de integración continua.
+
+- `main`: es solamente para codigo de produccion.
+
+- `develop`: es para codigo en desarrollo.
+
+- `feature`: son ramas creadadas de la rama `develop`  y sirve para implementar nuevas caracteristicas a nuestro proyecto.
+
+- `hotfix`: son ramas creadas de la rama `main` y sirve para arreglar bugs  detectados en produccion en caliente.
+
+- `release`: son ramas creadas de la rama `develop` y se utiliza para preparar el próximo lanzamiento del producto.
+
+### Github Flow
+
+![github_flow](/Users/rodri/Documents/SCESI/apuntes/imagenes/github-flow.jpeg)
+
+Es una estrategia de ramificación ligera adecuada para equipos que practican la implementación continua. Esta estrategia enfatiza la colaboración, los lanzamientos frecuentes y un proceso de desarrollo optimizado. Dada su simplicidad, el flujo de GitHub funciona mejor para equipos y proyectos pequeños. Sin embargo, a medida que aumentan el tamaño y la complejidad, puede resultar complicado gestionar los cambios en todo el código base con este flujo.
+
+- La rama `main` es solo para el código de producción.
+
+- El desarrollo se realiza en ramas de `features` separadas que luego se fusionan en la rama `main` cuando esté lista.
+
+- Las pull requests se utilizan para las revisiones de código y deben cumplir con las reglas de protección de la rama antes de fusionarse.
+
+- Los lanzamientos se cortan de la rama `main` y se etiquetan para facilitar el control de versiones.
+
+### Basado en Trunk
+
+![trunk](/Users/rodri/Documents/SCESI/apuntes/imagenes/trunk-based.jpeg)
+
+ Es un modelo de ramificación en el que los desarrolladores colaboran en el código en una única rama llamada `trunk`. Esta estrategia requiere esfuerzos directos `trunk`y colaboración entre los desarrolladores para mantener una `trunk`rama estable. Dado que los cambios se integran continuamente en el sistema `trunk`, existe un mayor riesgo de introducir cambios que puedan afectar la estabilidad de todo el sistema.
+
+- Todo el código está comprometido con una sola rama, generalmente llamada `trunk`.
+
+- La rama `trunk` siempre está lista para la producción.
+
+- El trabajo de desarrollo se realiza directamente en la rama `trunk`.
+
+- No hay ninguna rama `feature` de larga duración.
+
+- Antes de pushear los cambios, los desarrolladores realizan una preintegración completa  (compilar, pruebas unitarias, etc.) en sus máquinas locales.
+
+- Después de que los cambios ya estén en la rama `trunk`, puede haber una revisión del código posterior a la integración.
+
+### Ship Show Ask
+
+![ship_show_ask](/Users/rodri/Documents/SCESI/apuntes/imagenes/ship-show-ask.jpeg)
+
+Es una estrategia de ramas que combina la idea de crear Pull Request con la habilidad de seguir publicando cambios rápidamente. Fue presentada por Rousan Wilsenach en el blog del mítico Martin Fowler.
+
+Los cambios que creamos en el repositorio se categorizan en tres:
+
+- `Ship`: Se fusiona en la rama principal sin revisión
+- `Show`: Abre una petición de cambios para que sean revisados por CI pero se fusiona inmediatamente
+- `Ask`: Abre una PR para discutir los cambios antes de fusionarlos
