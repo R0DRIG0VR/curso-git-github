@@ -271,7 +271,7 @@ En una pullrequest tendremos 3 partes importantes:
 
 ### Gitflow
 
-![gitflow](/Users/rodri/Documents/SCESI/apuntes/imagenes/git-flow.jpeg)
+![gitflow](imagenes/git-flow.jpeg)
 
 Es una estrategia de ramificación útil para equipos que tienen procesos de lanzamiento claros y necesitan mantener estables sus entornos de producción. Sin embargo, la dependencia de múltiples ramas y reglas añade mucha complejidad al proceso. Esto puede resultar abrumador para los nuevos miembros del equipo y puede generar conflictos debido al incumplimiento de los principios de integración continua.
 
@@ -287,7 +287,7 @@ Es una estrategia de ramificación útil para equipos que tienen procesos de lan
 
 ### Github Flow
 
-![github_flow](/Users/rodri/Documents/SCESI/apuntes/imagenes/github-flow.jpeg)
+![github_flow](imagenes/github-flow.jpeg)
 
 Es una estrategia de ramificación ligera adecuada para equipos que practican la implementación continua. Esta estrategia enfatiza la colaboración, los lanzamientos frecuentes y un proceso de desarrollo optimizado. Dada su simplicidad, el flujo de GitHub funciona mejor para equipos y proyectos pequeños. Sin embargo, a medida que aumentan el tamaño y la complejidad, puede resultar complicado gestionar los cambios en todo el código base con este flujo.
 
@@ -301,7 +301,7 @@ Es una estrategia de ramificación ligera adecuada para equipos que practican la
 
 ### Basado en Trunk
 
-![trunk](/Users/rodri/Documents/SCESI/apuntes/imagenes/trunk-based.jpeg)
+![trunk](imagenes/trunk-based.jpeg)
 
  Es un modelo de ramificación en el que los desarrolladores colaboran en el código en una única rama llamada `trunk`. Esta estrategia requiere esfuerzos directos `trunk`y colaboración entre los desarrolladores para mantener una `trunk`rama estable. Dado que los cambios se integran continuamente en el sistema `trunk`, existe un mayor riesgo de introducir cambios que puedan afectar la estabilidad de todo el sistema.
 
@@ -319,7 +319,7 @@ Es una estrategia de ramificación ligera adecuada para equipos que practican la
 
 ### Ship Show Ask
 
-![ship_show_ask](/Users/rodri/Documents/SCESI/apuntes/imagenes/ship-show-ask.jpeg)
+![ship_show_ask](imagenes/ship-show-ask.jpeg)
 
 Es una estrategia de ramas que combina la idea de crear Pull Request con la habilidad de seguir publicando cambios rápidamente. Fue presentada por Rousan Wilsenach en el blog del mítico Martin Fowler.
 
