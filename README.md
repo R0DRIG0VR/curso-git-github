@@ -225,6 +225,8 @@ En una pullrequest tendremos 3 partes importantes:
 
 ### Tags
 
+Las etiquetas son muy útiles cuando quieres marcar ciertos puntos en la historia como versiones importantes de tu proyecto. Por ejemplo, podrías crear una etiqueta para marcar la versión `v1.0.0` de tu software. Luego, siempre puedes hacer un `git checkout v1.0.0` para obtener el código tal cual estaba en ese punto.
+
 - Añadir un tag a un commit: `git tag -a nombre_del_tag -m “mensaje_del_tag” hash_del_commit`
 
 - Eliminar un tag: `git tag -d nombre_del_tag`
@@ -238,6 +240,8 @@ En una pullrequest tendremos 3 partes importantes:
 - Eliminar un tag del repositorio remoto: `git push nombre_repositorio_remoto:refs/tags/nombre_del_tag`
 
 ### Stash
+
+Es una forma de guardar temporalmente cambios no confirmados para que puedas cambiar de contexto y luego volver a esos cambios más tarde. Es una herramienta muy útil para manejar cambios en el código que aún no estás listo para confirmar.
 
 - Hacer un stash: `git stash`
 
@@ -269,7 +273,7 @@ En una pullrequest tendremos 3 partes importantes:
 
 ## Flujos de trabajo
 
-### Gitflow
+### Git Flow
 
 ![gitflow](imagenes/git-flow.jpeg)
 
